@@ -1,0 +1,30 @@
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* h1{
+    font-size: xx-large;
+    color: rgb(38, 111, 111);
+} */
+
+#countlabel{
+    display: block;
+    font-size: 10em;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    color: azure;
+    background-color:rgb(96, 171, 21);
+    font-size: 2em;
+    border-radius: 6px;
+    cursor:pointer;
+    transition: background-color 0.50s;
+}
+
+button:hover{
+    background-color: chartreuse;
+}
