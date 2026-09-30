@@ -158,7 +158,7 @@ document.getElementById("mysub").onclick = function(){
 
 //Counter program
 
-
+/*
 const decreasebtn= document.getElementById("decrease");
 const resetbtn= document.getElementById("reset");
 const increasebtn= document.getElementById("increase");
@@ -178,3 +178,213 @@ resetbtn.onclick = function(){
     count=0;
     countlabel.textContent = count;
 }
+*/
+
+
+//Random number generator
+
+//For rolling an dice
+
+// const min=1; const max=6;
+
+// let randomNum=Math.floor(Math.random()*6)+1;
+
+// console.log(randomNum);
+
+// let num=Math.floor(6/5);
+
+// console.log(num);
+
+
+
+/*
+document.getElementById("myBtn").onclick = function(){
+    let randomNum=Math.floor(Math.random()*6)+1;
+    document.getElementById("val_counter").textContent = randomNum;
+    if(randomNum==6){
+        document.getElementById("win").textContent = `Hooray u won`;
+    }else document.getElementById("win").textContent = ``;
+}
+*/
+
+
+/*
+const fit=document.getElementById("fit??");
+const two=document.getElementById("two");
+const one=document.getElementById("one");
+const x=document.getElementById("x");
+
+const sub=document.getElementById("mySubmit");
+const fitresult=document.getElementById("fit-result");
+const timeresult=document.getElementById("time-result");
+
+sub.onclick = function(){
+    if(fit.checked){
+        fitresult.textContent = `You're into the game 😎`;
+    }
+    else{
+        fitresult.textContent = `Ahh Get out of your comfort zone buddy 😩`;
+    }
+
+    if(two.checked){
+        timeresult.textContent = `lets rock !!!`;
+    }
+    else if(one.checked){
+        timeresult.textContent = `lets rock !!!`;
+    }
+    else if(x.checked){
+        timeresult.textContent = `lets rock !!!`;
+    }
+    else{
+        timeresult.textContent = `Don't be so lazy 🙂‍↕️`;
+    }
+}
+    */
+
+//Ternary operator
+/*
+let age=18;
+
+console.log(age>=18 ? `You're an adult` : `You're an minor`);
+*/
+
+//Switch --> Replacement of many if else if statements ;
+
+/*
+let Cgr=document.getElementById("cgr");
+let sub=document.getElementById("mysub");
+let result=document.getElementById("result");
+let suprise=document.getElementById("suprise");
+let grade;
+
+sub.onclick = function(){
+    let cgr=Cgr.value;
+    switch(true){
+        case cgr==10:
+            grade="A*";
+            break;
+        case cgr>=7.5:
+            grade="A";
+            break;
+        case cgr>=5:
+            grade="B";
+            break;
+        default : 
+            grade="F";
+    }
+    result.textContent = `Your grade for this academic year is ${grade}`;
+
+    if(grade=="A*"){
+    suprise.textContent = `Hooray you have been exempted for the next term , keep learning and keep grinding`;
+    }
+}
+*/
+
+
+//Number guessing game
+
+
+/*
+const min=1;
+const max=100;
+
+let randomNum=Math.floor(Math.random()*(max-min+1))+min;
+let attempts=0;
+let guess;
+
+console.log(`Hey guess what the random number is ${randomNum}`);
+
+while(true){
+    guess=window.prompt(`Enter an number between ${min}-${max} -- > Chack how much attempt will it take for you`);
+    guess=Number(guess);
+    if(isNaN(guess) || guess<min || guess>max){
+        window.alert(`Enter an valid number between ${min}-${max}`);
+    }
+    else{
+        if(guess>randomNum){
+            attempts++;
+            window.alert(`Too high brotha!!`);
+        }else if(guess < randomNum){
+            attempts++;
+            window.alert(`Are you serious ?? Why too low guess`);
+        }else {
+            window.alert(`You entered the correct number ${randomNum} and it took you ${attempts} attempts`);
+            break;
+        }
+    }
+}
+*/
+
+
+
+//Creating an temperature conversion card using js
+/*
+const val=document.getElementById("val");
+const celcius=document.getElementById("celcius");
+const farenheit=document.getElementById("farenheit");
+const sub=document.getElementById("convert");
+const out=document.getElementById("out")
+
+let output;
+let val1;
+
+sub.onclick = function(){
+    val1=Number(val.value);
+    if(celcius.checked){
+        output=(val1*9/5)+32;
+    }else if(farenheit.checked){
+        output=(val1-32)*5/9;
+    }
+    out.textContent = `The converted value is ${output}`;
+}
+*/
+
+
+//Spread operators
+/*
+let fruits = ["apple","banana","mango"];
+
+let food = [...fruits,"eggs","hamp","pine"];
+
+console.log(food);
+
+let num="strings";
+
+let newnum = [...num].join("-");
+
+console.log(newnum);
+*/
+
+
+
+//Rest parameters
+
+/*
+let item1="sushi";
+let item2="Magique";
+let item3="Pizza";
+let item4="hamburger";
+let item5="Rice";
+
+//Reverse working manipulatories:
+function getMenu(...Menu){
+    return Menu;
+}
+
+let Menu=getMenu(item1,item2,item3,item4,item5);
+console.log(`You've got ${Menu} in your Menu`);
+*/
+
+
+//Calculating the average of the marks using rest parameters 
+
+/*
+function myAverage(...numbers){
+    let output=0;
+    for(let num of numbers) output+=num;
+    return output/numbers.length;
+}
+
+let average = myAverage(55.6,84,96);
+console.log(`Your Average marks is ${average}`);
+*/
