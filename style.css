@@ -2,7 +2,7 @@ body{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1{
-    font-size: xx-large;
+    font-size: 3rem;
     color: rgb(38, 111, 111);
 }
 /* 
@@ -23,23 +23,28 @@ button{
     background-color:rgb(96, 171, 21);
     font-size: 1.5em;
     border-radius: 6px;
+    font-weight:bold;
     cursor:pointer;
-    transition: background-color 0.50s;
+    transition: background-color 0.20s;
 }
 
 button:hover{
-    background-color: chartreuse;
+    background-color:rgb(160, 239, 81);
+}
+button:active{
+    background-color:rgb(33, 165, 30);
 }
 
-.card{
+#card{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;  
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 3.5px solid black;
     border-radius: 20px;
-    width:fit-content;
-    margin-left: 25%;
+    margin-left: 200px;
+    width:fit-content; 
     padding: 10px;
     box-shadow: 10px 10px  25px rgb(32, 50, 4);
 }
@@ -48,9 +53,34 @@ button:hover{
     border-color: rgb(255, 9, 9);
 }
 
-.out{
-    display: inline;
+input{
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 23px;
+    border: 3px solid black;
 }
+
+#diceresult{
+    margin: 25px;
+    font-size: 1.5rem;
+}
+
+#diceimage img{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+#diceimage{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .out{
+    display: inline;
+} */
 /* #suprise{
     font-weight: bold;
     background-color: yellow;

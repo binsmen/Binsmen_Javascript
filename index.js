@@ -388,3 +388,29 @@ function myAverage(...numbers){
 let average = myAverage(55.6,84,96);
 console.log(`Your Average marks is ${average}`);
 */
+
+
+//Dice Roller Program 
+
+//ONclick property 
+const val=document.getElementById("val");
+const dice=document.getElementById("diceresult");
+const image=document.getElementById("diceimage");
+
+let rollit;
+
+function RollDice(){
+    rollit=val.value;
+    let result=[];
+    let images=[];
+
+    for(let i=0; i<rollit; i++){
+        let randomNum=Math.floor(Math.random()*6)+1;
+        result.push(randomNum);
+        images.push(`<img src = "Dice_images/${randomNum}.png">`);
+    }
+
+    dice.textContent = `Dice : ${result.join(', ')}`;
+    image.innerHTML = images.join('');
+
+}
